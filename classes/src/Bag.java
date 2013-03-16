@@ -1,11 +1,10 @@
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * tavara/käyttö
+ * item/käyttö
  * *************
  * sellin avain/sellin ovi
  * komentosillan avain/komentosillan ovi
@@ -14,25 +13,25 @@ import java.util.Map;
  * 
  * 
  * 
- * @author lentonen_admin
+ * @author tapir
  */
 public class Bag {
 
-    ArrayList<Item> tavarat;
+    ArrayList<Item> stuff;
             
     public Bag(){  
-      tavarat = new ArrayList();     
+      stuff = new ArrayList();     
     }
     
     public ArrayList getItems(){
-        return tavarat;
+        return stuff;
     }
     
     
     public boolean findItem(String name){
        boolean found = false;
-       for(int i = 0; i< tavarat.size();i++){
-           if(tavarat.get(i).name().contains(name)){
+       for(int i = 0; i< stuff.size();i++){
+           if(stuff.get(i).name().contains(name)){
               found = true; 
               return found;
            }
@@ -42,40 +41,40 @@ public class Bag {
     
     
     public Item getItem(String name){
-        Item tavara = new Item(0,0,"");
-         for(int i = 0; i< tavarat.size();i++){
-           if(tavarat.get(i).name().contains(name)){
-              return tavarat.get(i);
+        Item item = new Item(0,0,"");
+         for(int i = 0; i< stuff.size();i++){
+           if(stuff.get(i).name().contains(name)){
+              return stuff.get(i);
            }
        }
-         return tavara;
+         return item;
     }
     
     
-    public String addItem(String tavara){
+    public String addItem(String item){
         String  message;
-        System.out.println("Tavara:"+tavara);
-        tavarat.add(new Item(0,0,tavara));
+        System.out.println("Tavara:"+item);
+        stuff.add(new Item(0,0,item));
         
-        if(tavara.trim().equals("Lockpick")){
+        if(item.trim().equals("Lockpick")){
          message= " Here's a lockpick. It might come in handy if you,\n the master of unlocking, take it with you.";
         }
-        else if(tavara.equals("Hacking device")){
+        else if(item.equals("Hacking device")){
          message = " You lure the rats away from their nest with the cheese.\n You see a thingy in the nest and grab it.\n"
                  + " It's a hacking device! Do not let fear block your path.";   
         }
         else{
-            message="Got: " + tavara;
+            message="Got: " + item;
         }
         return message;
     }
     
     /**
-     * Käytetään tavaraa ja poistetaan se repusta
-     * @param tavara 
+     * Käytetään itema ja poistetaan se repusta
+     * @param item 
      */
-    public void useItem(Item tavara){       
-        tavarat.remove(tavara);
+    public void useItem(Item item){       
+        stuff.remove(item);
     }
    
 }

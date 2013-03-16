@@ -3,7 +3,10 @@
  import java.io.IOException; 
  import java.io.ByteArrayOutputStream; 
  import java.io.InputStream;
-
+/**
+ *
+ * @author lentonen_admin
+ */
 public class RawConsole {
 
     private static String ttyConfig;
