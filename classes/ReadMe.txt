@@ -9,3 +9,5 @@ java -jar EscapeFromIkarus.jar
 
 
 Tested in Ubuntu terminal (best) / Windows cmd
+
+Requires Java7. 
