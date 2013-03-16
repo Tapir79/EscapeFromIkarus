@@ -9,7 +9,7 @@ import java.util.Map;
 
 /**
  *
- * @author lentonen_admin
+ * @author tapir
  */
 public class UseSquare {
     

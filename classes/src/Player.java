@@ -2,7 +2,7 @@
 
 /**
  *
- * @author lentonen_admin
+ * @author tapir
  */
 public class Player {
     

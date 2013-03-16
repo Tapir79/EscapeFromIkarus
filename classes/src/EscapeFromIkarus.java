@@ -45,7 +45,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author lentonen_admin
+ * @author tapir
  */
 public class EscapeFromIkarus{
 

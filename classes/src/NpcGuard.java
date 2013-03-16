@@ -2,7 +2,7 @@
 
 /**
  * 5 steps down/up 
- * @author lentonen_admin
+ * @author tapir
  */
 public class NpcGuard {
     

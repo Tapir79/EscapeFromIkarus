@@ -1,11 +1,8 @@
-
-
-
 import java.util.HashMap;
 
 /**
  *
- * @author lentonen_admin
+ * @author tapir
  */
 public class RemoteLocks {
     

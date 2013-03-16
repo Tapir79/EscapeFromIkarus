@@ -10,7 +10,7 @@ import java.util.Map;
  * Builds area,item,use square lists
  * 
  * 
- * @author lentonen_admin
+ * @author tapir
  */
 public final class Grid {
   

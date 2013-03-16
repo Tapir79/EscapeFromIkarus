@@ -5,7 +5,7 @@
  import java.io.InputStream;
 /**
  *
- * @author lentonen_admin
+ * @author tapir
  */
 public class RawConsole {
 

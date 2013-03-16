@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author lentonen_admin
+ * @author tapir
  */
 public class Dialogue {
    
